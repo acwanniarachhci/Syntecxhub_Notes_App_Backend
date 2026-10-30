@@ -23,6 +23,11 @@ Node.js, Express, MongoDB + Mongoose, bcryptjs, jsonwebtoken, dotenv
 1. Clone the repo and run `npm install`
 2. Create a `.env` file:
 
+PORT=5004
+MONGO_URI=mongodb://127.0.0.1:27017/syntecxhub_notes
+JWT_SECRET=your_long_random_secret
+JWT_EXPIRES_IN=1h
+
 3. Run `npm run dev`
 
 ## API Endpoints
@@ -48,17 +53,6 @@ Node.js, Express, MongoDB + Mongoose, bcryptjs, jsonwebtoken, dotenv
 | deleted  | `?deleted=true`    | Show soft-deleted notes (trash) |
 | category | `?category=work`   | Filter by category              |
 
-## Note Schema
-
-| Field      | Type     | Notes                              |
-|------------|----------|------------------------------------|
-| title      | String   | Required, max 100 characters       |
-| content    | String   | Required                           |
-| category   | String   | Default `general`, stored lowercase|
-| user       | ObjectId | Reference to the owner (User)      |
-| isArchived | Boolean  | Default `false`                    |
-| deletedAt  | Date     | `null` unless soft-deleted         |
-
 ## Status Codes
 
 | Code | Meaning                                              |
@@ -73,14 +67,10 @@ Node.js, Express, MongoDB + Mongoose, bcryptjs, jsonwebtoken, dotenv
 
 ## Screenshots
 
-Screenshot 2026-10-29 172131.png
-Screenshot 2026-10-29 172154.png
-Screenshot 2026-10-29 172258.png
-Screenshot 2026-10-29 172346.png
-Screenshot 2026-10-29 173944.png
-Screenshot 2026-10-29 174034.png
-Screenshot 2026-10-29 174153.png
-Screenshot 2026-10-29 180552.png
+![Owner-only access](screenshots/owner-only-404.png)
+![Populate user with notes](screenshots/populate-me.png)
+![Archive](screenshots/archive.png)
+![Soft delete](screenshots/soft-delete.png)
 
 ## Author
 
