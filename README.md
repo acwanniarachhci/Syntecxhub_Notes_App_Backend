@@ -66,11 +66,14 @@ JWT_EXPIRES_IN=1h
 | 500  | Server error                                         |
 
 ## Screenshots
-
-![Owner-only access](screenshots/owner-only-404.png)
-![Populate user with notes](screenshots/populate-me.png)
-![Archive](screenshots/archive.png)
-![Soft delete](screenshots/soft-delete.png)
+Screenshot 2026-10-29 172131.png
+Screenshot 2026-10-29 172154.png
+Screenshot 2026-10-29 172258.png
+Screenshot 2026-10-29 172346.png
+Screenshot 2026-10-29 173944.png
+Screenshot 2026-10-29 174034.png
+Screenshot 2026-10-29 174153.png
+Screenshot 2026-10-29 180552.png
 
 ## Author
 
